@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--TITLE OF THE PAGE-->
+  <title>Create Account</title>
+<!-- LINKING CSS FILE-->
+  <!-- MAIN CSS FILE-->
+  <link rel="stylesheet" href="regi.css"> 
+  <!--ONLNE CSS FOR ICON-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>Create Account !</header>
+    
+    <!--FORM SECTION-->
+    <form action="#">
+
+      <!--EMIAL SECTION-->
+      <div class="field email">
+        <div class="input-area">
+          <!--edit id-->
+          <input id="email" type="text" placeholder="Enter Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+
+        <!--EMAIL ERROR-->
+        <div class="error error-txt">Email is required</div>
+      </div>
+
+      <!--PASSWORD SECTION-->
+      <div class="field password">
+        <div class="input-area">
+          <input id="password" type="password" placeholder="Enter Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+
+        <!--PASSWORD ERRORS-->
+        <div class="error error-txt"><br>
+        </div>
+      </div>
+
+      <div class="field password">
+        <div class="input-area">
+          <input id="password" type="password" placeholder="Enter Confirm Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+
+        <!--PASSWORD ERRORS-->
+        <div class="error error-txt"><br>
+        </div>
+      </div>
+
+      <div class="tacbox">
+        <input id="checkbox" type="checkbox"/>
+        <label for="checkbox"> I agree these with <a href="#">Terms and Conditions</a>.</label>
+      
+      </div>
+
+      <!--FORGOT PASSWORD SECTION-->
+      <div class="pass-txt"><a href="forgotpassword\index.html"></a></div>
+      <input type="submit" value="Create Account" onclick="login()">
+    </form>
+
+    <!--NEW ACCOUNT SECTION-->
+    <div class="sign-txt"><a href="/index.html">Back to sign In</a></div>
+  </div>
+
+  <!--LINKING JS FILE-->
+  <script src="script.js"></script>
+
+</body>
+</html>
